@@ -6,16 +6,12 @@ using only **Python and NumPy**, without any machine learning libraries.
 The goal of this project is to demonstrate **conceptual understanding of instance-based learning**
 and distance-driven decision making.
 
----
-
 ## 🎯 Goal
 To deeply understand:
 - How distance-based classification works
 - The role of similarity metrics in supervised learning
 - How the choice of **K** affects bias–variance tradeoff
 - Why KNN has no explicit training phase
-
----
 
 ## 🧠 Algorithm Overview
 
@@ -27,8 +23,6 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
    - Compute distance to all training points
    - Select the **K nearest neighbors**
    - Predict the label using **majority voting**
-
----
 
 ## ✏️ Mathematical Intuition
 
@@ -44,8 +38,6 @@ d(x,y)=∑∣xi​−yi​∣
 ### Prediction Rule
 ŷ = most frequent label among the K nearest neighbors
 
----
-
 ## 📊 Observations & Results
 
 - Small K values:
@@ -58,15 +50,11 @@ d(x,y)=∑∣xi​−yi​∣
 
 This implementation clearly shows the **bias–variance tradeoff** controlled by K.
 
----
-
 ## ✅ Advantages
 - Very simple to understand and implement
 - No explicit training phase
 - Works well on small to medium datasets
 - Highly interpretable
-
----
 
 ## ❌ Disadvantages
 - Slow inference on large datasets (**O(n)**)
@@ -75,14 +63,10 @@ This implementation clearly shows the **bias–variance tradeoff** controlled by
 - Strongly affected by feature scaling
 - Choosing K is non-trivial
 
----
-
 ## 🛠 Tech Stack
 - Python
 - NumPy (read and visualization dataset)
 - Matplotlib (for visualization and debugging)
-
----
 
 ## 🚀 Why this project?
 This project focuses on **understanding, not abstraction**.
