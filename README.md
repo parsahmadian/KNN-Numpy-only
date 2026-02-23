@@ -34,16 +34,19 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
 ### Distance Metrics
 
 - **Euclidean distance**:
-
-> d(x, xᵢ) = √(∑(x − xᵢ)²)
+```math
+d(x, xᵢ) = √(∑(x − xᵢ)²)
+```
 
 - **Manhattan distance**:
-
+```math
 > d(x,y)=∑∣xi​−yi​∣
+```
 
 ### Prediction Rule
+```math
 ŷ = most frequent label among the K nearest neighbors
-
+```
 ---
 
 ## 🏡 Dataset Scenario
