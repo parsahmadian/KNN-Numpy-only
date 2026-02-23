@@ -40,13 +40,12 @@ d(x, xᵢ) = √(∑(x − xᵢ)²)
 
 - **Manhattan distance**:
 ```math
-> d(x,y)=∑∣xi​−yi​∣
+d(x,y)=∑∣xi​−yi​∣
 ```
 
 ### Prediction Rule
-```math
 ŷ = most frequent label among the K nearest neighbors
-```
+
 ---
 
 ## 🏡 Dataset Scenario
