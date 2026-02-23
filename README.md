@@ -1,62 +1,83 @@
 # K-Nearest Neighbors (KNN) from Scratch — Python & NumPy
 
-This repository contains a **from-scratch implementation of the K-Nearest Neighbors (KNN) algorithm**
+This repository contains a **from-scratch implementation of the K-Nearest Neighbors (KNN) algorithm**  
 using only **Python and NumPy**, without any machine learning libraries.
 
-The goal of this project is to demonstrate **conceptual understanding of instance-based learning**
-and distance-driven decision making.
+It includes a **realistic synthetic dataset of houses** with multiple features, scaling, and optional PCA visualization for insights.
+
+---
 
 ## 🎯 Goal
+
 To deeply understand:
+
 - How distance-based classification works
 - The role of similarity metrics in supervised learning
 - How the choice of **K** affects bias–variance tradeoff
 - Why KNN has no explicit training phase
+- How preprocessing (scaling, PCA) affects model performance
 
 ## 🧠 Algorithm Overview
 
 KNN is a **supervised, non-parametric, lazy learning** algorithm.
 
-### Core idea:
+### Core Idea
+
 1. Store all training samples
 2. For a new input point:
-   - Compute distance to all training points
+   - Compute distance to all training points (**Euclidean** or **Manhattan**)
    - Select the **K nearest neighbors**
    - Predict the label using **majority voting**
 
 ## ✏️ Mathematical Intuition
 
-### Distance Metric
-Euclidean distance is used:
+### Distance Metrics
 
-d(x, xᵢ) = √(∑(x − xᵢ)²)
+- **Euclidean distance**:
 
-Manhattan distance is used:
+> d(x, xᵢ) = √(∑(x − xᵢ)²)
 
-d(x,y)=∑∣xi​−yi​∣
+- **Manhattan distance**:
+
+> d(x,y)=∑∣xi​−yi​∣
 
 ### Prediction Rule
 ŷ = most frequent label among the K nearest neighbors
 
+---
+
+## 🏡 Dataset Scenario
+
+- Synthetic housing dataset with **1200 samples**
+- Features:
+  - Area (m²), Rooms, Building Age, Distance to City Center
+  - Floor, Elevator, Parking
+- Target: **Price Category (5 classes: Economy → Luxury)**
+- Includes realistic noise and overlapping classes
+- Suitable for KNN, visualization, and PCA exploration
+
 ## 📊 Observations & Results
 
-- Small K values:
+- **Small K values**:
   - Low bias
   - High variance
   - Sensitive to noise
-- Large K values:
+- **Large K values**:
   - Smoother decision boundary
   - Potential underfitting
-
-This implementation clearly shows the **bias–variance tradeoff** controlled by K.
+- Scaling and PCA clearly show **clusters and separability**
+- Distance metric choice affects nearest neighbor selection
 
 ## ✅ Advantages
+
 - Very simple to understand and implement
 - No explicit training phase
 - Works well on small to medium datasets
 - Highly interpretable
+- Provides clear insight with visualization
 
 ## ❌ Disadvantages
+
 - Slow inference on large datasets (**O(n)**)
 - High memory usage (stores all data)
 - Sensitive to noisy data
@@ -64,13 +85,20 @@ This implementation clearly shows the **bias–variance tradeoff** controlled by
 - Choosing K is non-trivial
 
 ## 🛠 Tech Stack
-- Python
-- NumPy (read and visualization dataset)
-- Matplotlib (for visualization and debugging)
+
+- Python  
+- NumPy (for calculation and data manipulation)  
+- Matplotlib (for visualization and debugging)  
+- Scikit-learn **only for StandardScaler / PCA** (optional)
+
+---
 
 ## 🚀 Why this project?
-This project focuses on **understanding, not abstraction**.
-It demonstrates my ability to:
-- Strong understanding of KNN fundamentals
-- Ability to implement algorithms from scratch
-- Awareness of real-world limitations and solutions
+
+This project demonstrates **understanding, not abstraction**.  
+It shows my ability to:
+
+- Implement algorithms from scratch
+- Handle preprocessing and dimensionality reduction
+- Reason about bias–variance tradeoff and distance metrics
+- Visualize high-dimensional data intuitively
