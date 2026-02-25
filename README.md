@@ -62,7 +62,6 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
 ### Prediction Rule
 ŷ = most frequent label among the K nearest neighbors
 
----
 
 ## 🏡 Dataset Scenario
 
@@ -127,7 +126,6 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
 - NumPy (for calculation and data manipulation)  
 - Matplotlib (for visualization and debugging)  
 
----
 
 ## 🚀 Why this project?
 
