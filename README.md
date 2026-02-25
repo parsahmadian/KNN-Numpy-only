@@ -75,7 +75,7 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
 - Suitable for KNN, visualization, and PCA exploration
 
 <p>
-  <img src="results/pca_plot.png" width="700">
+  <img src="results/pca_plot.png" width="500">
 </p>
 
 ## 🔍 Preprocessing Steps
