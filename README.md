@@ -36,7 +36,6 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
 ### Distance Metrics
 
 - **Euclidean distance**:
-
 ```math
 \begin{align}
 & \hspace{18cm} \\
@@ -46,7 +45,10 @@ KNN is a **supervised, non-parametric, lazy learning** algorithm.
 
 - **Manhattan distance**:
 ```math
-d(x,y)=∑∣xi​−yi​∣
+\begin{align}
+& \hspace{18cm} \\
+& d(x,y)=∑∣xi​−yi​∣
+\end{align}
 ```
 
 <p>
